@@ -26,8 +26,6 @@ public class DownloadController {
     public ResponseEntity<byte[]> download(@RequestParam("file") String name, HttpServletRequest request) throws IOException {
         //获取服务器目录
         String path = request.getServletContext().getRealPath("download");
-        System.out.println(path);
-        System.out.println(name);
         String fileName = name;
         File file=new File(path,fileName);
         //处理文件名含有中文
