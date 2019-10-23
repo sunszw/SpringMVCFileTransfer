@@ -6,8 +6,10 @@ import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import javax.servlet.http.HttpServletRequest;
@@ -17,24 +19,24 @@ import java.io.*;
 import java.net.URLEncoder;
 
 
-@RestController
-@RequestMapping("/")
+@Controller
+@RequestMapping("file")
 public class DownloadController {
 
 
     @RequestMapping("download.do")
+    @ResponseBody
     public ResponseEntity<byte[]> download(@RequestParam("file") String fileName, HttpServletRequest request) throws IOException {
-        //获取服务器目录
+        //1.获得文件的绝对路径和文件名
         String path = request.getServletContext().getRealPath("download");
-        File file=new File(path,fileName);
-        //处理文件名含有中文
+        File file = new File(path, fileName);
         fileName = URLEncoder.encode(fileName, "utf-8");
-        HttpHeaders headers=new HttpHeaders();
-        headers.setContentDispositionFormData("attachment",fileName);
+        //2.设置响应头Disposition和响应类型
+        HttpHeaders headers = new HttpHeaders();
+        headers.setContentDispositionFormData("attachment", fileName);
         headers.setContentType(MediaType.APPLICATION_OCTET_STREAM);
-
-        return new ResponseEntity<byte[]>(FileUtils.readFileToByteArray(file),headers, HttpStatus.CREATED);
+        //3.返回数据
+        return new ResponseEntity<>(FileUtils.readFileToByteArray(file), headers, HttpStatus.CREATED);
     }
-
 
 }
