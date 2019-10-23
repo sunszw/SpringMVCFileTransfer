@@ -23,10 +23,9 @@ public class DownloadController {
 
 
     @RequestMapping("download.do")
-    public ResponseEntity<byte[]> download(@RequestParam("file") String name, HttpServletRequest request) throws IOException {
+    public ResponseEntity<byte[]> download(@RequestParam("file") String fileName, HttpServletRequest request) throws IOException {
         //获取服务器目录
         String path = request.getServletContext().getRealPath("download");
-        String fileName = name;
         File file=new File(path,fileName);
         //处理文件名含有中文
         fileName = URLEncoder.encode(fileName, "utf-8");
