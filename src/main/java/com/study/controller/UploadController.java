@@ -18,7 +18,7 @@ import java.util.UUID;
 public class UploadController {
 
 
-    private static final long FILE_MAX_SIZE = 700 * 1024;
+    private static final long FILE_MAX_SIZE = 800 * 1024;
     private static final List<String> FILE_TYPES = new ArrayList<>();
 
     static {

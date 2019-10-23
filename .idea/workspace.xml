@@ -7,10 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a2094227-1dd5-42c3-b25b-88c8c27cc242" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/study/controller/FIleSizeBeyondException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/study/controller/FileEmptyException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/study/controller/FileTypeMatchException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/study/controller/FileUploadIOException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/study/controller/UploadController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/controller/UploadController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -177,7 +174,7 @@
       <updated>1570796529877</updated>
       <workItem from="1570796532721" duration="8315000" />
       <workItem from="1571815293469" duration="1637000" />
-      <workItem from="1571817527556" duration="246000" />
+      <workItem from="1571817527556" duration="544000" />
     </task>
     <task id="LOCAL-00001" summary="重构代码">
       <created>1571816199239</created>
@@ -186,7 +183,14 @@
       <option name="project" value="LOCAL" />
       <updated>1571816199239</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="暂不处理异常">
+      <created>1571817855624</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1571817855624</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -194,12 +198,14 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="重构代码" />
-    <option name="LAST_COMMIT_MESSAGE" value="重构代码" />
+    <MESSAGE value="暂不处理异常" />
+    <option name="LAST_COMMIT_MESSAGE" value="暂不处理异常" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="538" y="131" width="1517" height="859" key="#Project_Structure" timestamp="1570796835508">
-      <screen x="0" y="0" width="2560" height="1400" />
+    <state x="287" y="68" width="810" height="520" key="#Project_Structure" timestamp="1571817805873">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state x="287" y="68" width="810" height="520" key="#Project_Structure/0.0.1366.728/1366.0.1366.768@0.0.1366.728" timestamp="1571817805872" />
     <state x="538" y="131" width="1517" height="859" key="#Project_Structure/0.0.2560.1400@0.0.2560.1400" timestamp="1570796835508" />
     <state x="807" y="271" key="#Tomcat_Server" timestamp="1570798310440">
       <screen x="0" y="0" width="2560" height="1400" />
@@ -286,10 +292,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="697" y="268" key="Maven.ArtifactSearchDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1570797391860" />
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1571816286104">
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1571817968144">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728/1366.0.1366.768@0.0.1366.728" timestamp="1571816286104" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728/1366.0.1366.768@0.0.1366.728" timestamp="1571817968144" />
     <state x="842" y="308" width="874" height="1034" key="search.everywhere.popup" timestamp="1570799045897">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
