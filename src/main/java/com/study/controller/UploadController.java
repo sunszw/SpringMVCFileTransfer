@@ -30,16 +30,11 @@ public class UploadController {
     public String upload(HttpServletRequest request, @RequestParam("file") MultipartFile[] files) {
         for (int i = 0; i < files.length; i++) {
             //检查是否上传文件
-            if (files[i].isEmpty())
-                throw new FileEmptyException("请选择上传有效文件！");
-
+            if (files[i].isEmpty()){}
             //检查文件类型
-            if (!FILE_TYPES.contains(files[i].getContentType()))
-                throw new FileTypeMatchException("请选择有效的文件类型！");
-
+            if (!FILE_TYPES.contains(files[i].getContentType())){}
             //检查文件大小
-            if (files[i].getSize() > FILE_MAX_SIZE)
-                throw new FIleSizeBeyondException("请选择小于" + FILE_MAX_SIZE + "k的文件！");
+            if (files[i].getSize() > FILE_MAX_SIZE){}
 
             //保存的文件夹
             String directoryPath = request.getServletContext().getRealPath("upload");
@@ -60,7 +55,7 @@ public class UploadController {
             try {
                 files[i].transferTo(file);
             } catch (IOException e) {
-                throw new FileUploadIOException("上传文件时出现读写错误!");
+                e.printStackTrace();
             }
         }
 

@@ -7,10 +7,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a2094227-1dd5-42c3-b25b-88c8c27cc242" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/study/controller/DownloadController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/controller/DownloadController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SpringMVCFileTransfer/WEB-INF/classes/com/study/controller/DownloadController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/SpringMVCFileTransfer/WEB-INF/classes/com/study/controller/DownloadController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/study/controller/DownloadController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/study/controller/DownloadController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/study/controller/FIleSizeBeyondException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/study/controller/FileEmptyException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/study/controller/FileTypeMatchException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/study/controller/FileUploadIOException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/study/controller/UploadController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/controller/UploadController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +57,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.24511278" />
   </component>
@@ -176,6 +177,7 @@
       <updated>1570796529877</updated>
       <workItem from="1570796532721" duration="8315000" />
       <workItem from="1571815293469" duration="1637000" />
+      <workItem from="1571817527556" duration="246000" />
     </task>
     <task id="LOCAL-00001" summary="重构代码">
       <created>1571816199239</created>
@@ -211,6 +213,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="534" y="252" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1366.728/1366.0.1366.768@0.0.1366.728" timestamp="1571815464408" />
+    <state x="413" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1571817697173">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="413" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728/1366.0.1366.768@0.0.1366.728" timestamp="1571817697173" />
     <state x="553" y="196" key="FileChooserDialogImpl" timestamp="1571816738125">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
