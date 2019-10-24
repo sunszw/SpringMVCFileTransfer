@@ -29,7 +29,7 @@ public class DownloadController {
         String path = request.getServletContext().getRealPath("download");
         File file = new File(path, fileName);
         fileName = URLEncoder.encode(fileName, "utf-8");
-        //2.设置响应头Disposition和响应类型
+        //2.设置响应头Disposition和响应数据类型
         HttpHeaders headers = new HttpHeaders();
         headers.setContentDispositionFormData("attachment", fileName);
         headers.setContentType(MediaType.APPLICATION_OCTET_STREAM);
