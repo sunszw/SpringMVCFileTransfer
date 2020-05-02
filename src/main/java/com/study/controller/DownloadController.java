@@ -24,9 +24,9 @@ public class DownloadController {
 
     @RequestMapping("download.do")
     @ResponseBody
-    public ResponseEntity<byte[]> download(@RequestParam("file") String fileName, HttpServletRequest request) throws IOException {
+    public ResponseEntity<byte[]> download(@RequestParam("file") String fileName) throws IOException {
         //1.获得文件的绝对路径和文件名
-        String path = request.getServletContext().getRealPath("download");
+        String path = "/home/upload";
         File file = new File(path, fileName);
         fileName = URLEncoder.encode(fileName, "utf-8");
         //2.设置响应头Disposition和响应数据类型
